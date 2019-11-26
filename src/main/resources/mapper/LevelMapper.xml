@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.zpark.mapper.LevelMapper" >
+  <resultMap id="BaseResultMap" type="com.zpark.entity.Level" >
+    <id column="level_id" property="levelId" jdbcType="INTEGER" />
+    <result column="level_name" property="levelName" jdbcType="VARCHAR" />
+    <result column="receiver_id" property="receiverId" jdbcType="INTEGER" />
+    <result column="level_note" property="levelNote" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    level_id, level_name, receiver_id, level_note
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from level
+    where level_id = #{levelId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from level
+    where level_id = #{levelId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zpark.entity.Level" >
+    insert into level (level_id, level_name, receiver_id, 
+      level_note)
+    values (#{levelId,jdbcType=INTEGER}, #{levelName,jdbcType=VARCHAR}, #{receiverId,jdbcType=INTEGER}, 
+      #{levelNote,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.zpark.entity.Level" >
+    insert into level
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="levelId != null" >
+        level_id,
+      </if>
+      <if test="levelName != null" >
+        level_name,
+      </if>
+      <if test="receiverId != null" >
+        receiver_id,
+      </if>
+      <if test="levelNote != null" >
+        level_note,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="levelId != null" >
+        #{levelId,jdbcType=INTEGER},
+      </if>
+      <if test="levelName != null" >
+        #{levelName,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverId != null" >
+        #{receiverId,jdbcType=INTEGER},
+      </if>
+      <if test="levelNote != null" >
+        #{levelNote,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.zpark.entity.Level" >
+    update level
+    <set >
+      <if test="levelName != null" >
+        level_name = #{levelName,jdbcType=VARCHAR},
+      </if>
+      <if test="receiverId != null" >
+        receiver_id = #{receiverId,jdbcType=INTEGER},
+      </if>
+      <if test="levelNote != null" >
+        level_note = #{levelNote,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where level_id = #{levelId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.zpark.entity.Level" >
+    update level
+    set level_name = #{levelName,jdbcType=VARCHAR},
+      receiver_id = #{receiverId,jdbcType=INTEGER},
+      level_note = #{levelNote,jdbcType=VARCHAR}
+    where level_id = #{levelId,jdbcType=INTEGER}
+  </update>
+</mapper>

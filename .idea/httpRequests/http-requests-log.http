@@ -1,0 +1,440 @@
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1
+Accept: application/json
+Cache-Control: no-cache
+
+<> 2019-11-25T054152.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1
+Accept: application/json
+Cache-Control: no-cache
+
+<> 2019-11-25T054138.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1
+Accept: application/json
+Cache-Control: no-cache
+
+<> 2019-11-25T052540.404.html
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1
+Accept: application/json
+Cache-Control: no-cache
+
+<> 2019-11-25T052309.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T040513.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId?adminId=1
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T040502.404.html
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/update?adminName=admin5&adminId=1
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T040339.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/update?adminName=admin4&adminId=1
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T035635.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1?adminName=admin4
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T031250.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1?adminName=admin4
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T030615.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1?adminName=admin4
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T030601.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/selectByAdminId/1?adminName=admin4
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-25T024722.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/select/1?adminName=admin4
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-21T023630.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/select/1?adminName=ad
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-21T023615.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/select/1
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-21T023354.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/select/1
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-21T020150.404.html
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: application/json
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-20T110911.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-20T110853.200.json
+
+###
+
+GET http://localhost:8080/shopping_manage/admin/register?adminName=1&adminPhone=22&adminEmail=3&adminPassword=4&adminImage=5&adminPower=1&adminState=66
+Accept: */*
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-20T110749.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+ { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
+
+<> 2019-11-20T110625.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+{adminName:"xiaoc", adminPhone:1333,  adminEmail:"12312@qq.com",adminPassword:"123",  adminImage:"aaa",  adminPower:1,adminState:1}
+
+<> 2019-11-20T105913.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+{adminName:"xiaoc", adminPhone:1333,  adminEmail:"12312@qq.com",adminPassword:"123",  adminImage:"aaa",  adminPower:1,adminState:1}
+
+<> 2019-11-20T105726.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+{"adminName":"xiaoc", "adminPhone":1333,  "adminEmail":"12312@qq.com","adminPassword":"123",  "adminImage":"aaa",  "adminPower":1,"adminState":1}
+
+<> 2019-11-20T105724.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+{"adminName":"xiaoc", "adminPhone":1333,  "adminEmail":"12312@qq.com","adminPassword":"123",  "adminImage":"aaa",  "adminPower":1,"adminState":1}
+
+<> 2019-11-20T105723.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/register
+Accept: */*
+Cache-Control: no-cache
+
+{"adminName":"xiaoc", "adminPhone":1333,  "adminEmail":"12312@qq.com","adminPassword":"123",  "adminImage":"aaa",  "adminPower":1,"adminState":1}
+
+<> 2019-11-20T105717.200.json
+
+###
+
+GET http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104843.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104711-3.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104711-2.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104711-1.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104711.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104710-4.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104710-3.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104710-2.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104710-1.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104710.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104709-4.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104709-3.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104709-2.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104709-1.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104709.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104708-5.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104708-4.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104708-3.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104708-2.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104708-1.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104708.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104707-2.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104707-1.200.json
+
+###
+
+POST http://localhost:8080/shopping_manage/admin/login?adminId=1&adminPassword=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-20T104707.200.json
+
+###
+

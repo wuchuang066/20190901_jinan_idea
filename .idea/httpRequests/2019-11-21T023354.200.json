@@ -1,0 +1,91 @@
+{
+  "code": 0,
+  "message": null,
+  "resultData": {
+    "adminsPage": {
+      "total": 14,
+      "list": [
+        {
+          "adminId": 1,
+          "adminName": "admin",
+          "adminPhone": "13300000001",
+          "adminEmail": "asiodfyioasydfoi@qq.com",
+          "adminPassword": "1",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 1,
+          "adminState": 1
+        },
+        {
+          "adminId": 2,
+          "adminName": "tom",
+          "adminPhone": "13300000001",
+          "adminEmail": "234234@qq.com",
+          "adminPassword": "2",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 0,
+          "adminState": 1
+        },
+        {
+          "adminId": 3,
+          "adminName": "admin3",
+          "adminPhone": "1330000003",
+          "adminEmail": "nishidashagua3@qq.com",
+          "adminPassword": "3",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 2,
+          "adminState": 1
+        },
+        {
+          "adminId": 4,
+          "adminName": "admin4",
+          "adminPhone": "1330000004",
+          "adminEmail": "nishidashagua4@qq.com",
+          "adminPassword": "4",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 2,
+          "adminState": 1
+        },
+        {
+          "adminId": 5,
+          "adminName": "admin5",
+          "adminPhone": "1330000005",
+          "adminEmail": "nishidashagua5@qq.com",
+          "adminPassword": "5",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 2,
+          "adminState": 1
+        },
+        {
+          "adminId": 6,
+          "adminName": "admin6",
+          "adminPhone": "1330000006",
+          "adminEmail": "nishidashagua6@qq.com",
+          "adminPassword": "6",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 2,
+          "adminState": 1
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 6,
+      "size": 6,
+      "startRow": 1,
+      "endRow": 6,
+      "pages": 3,
+      "prePage": 0,
+      "nextPage": 2,
+      "isFirstPage": true,
+      "isLastPage": false,
+      "hasPreviousPage": false,
+      "hasNextPage": true,
+      "navigatePages": 8,
+      "navigatepageNums": [
+        1,
+        2,
+        3
+      ],
+      "navigateFirstPage": 1,
+      "navigateLastPage": 3
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "message": null,
+  "resultData": {
+    "adminMsg": {
+      "adminId": 6,
+      "adminName": null,
+      "adminPhone": null,
+      "adminEmail": null,
+      "adminPassword": null,
+      "adminImage": null,
+      "adminPower": null,
+      "adminState": null
+    }
+  }
+}

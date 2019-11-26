@@ -1,0 +1,39 @@
+{
+  "code": 0,
+  "message": null,
+  "resultData": {
+    "adminsPage": {
+      "total": 1,
+      "list": [
+        {
+          "adminId": 4,
+          "adminName": "admin4",
+          "adminPhone": "1330000004",
+          "adminEmail": "nishidashagua4@qq.com",
+          "adminPassword": "4",
+          "adminImage": "upload-images/admin-images/admin.jpg",
+          "adminPower": 2,
+          "adminState": 1
+        }
+      ],
+      "pageNum": 1,
+      "pageSize": 6,
+      "size": 1,
+      "startRow": 1,
+      "endRow": 1,
+      "pages": 1,
+      "prePage": 0,
+      "nextPage": 0,
+      "isFirstPage": true,
+      "isLastPage": true,
+      "hasPreviousPage": false,
+      "hasNextPage": false,
+      "navigatePages": 8,
+      "navigatepageNums": [
+        1
+      ],
+      "navigateFirstPage": 1,
+      "navigateLastPage": 1
+    }
+  }
+}

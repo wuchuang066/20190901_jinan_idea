@@ -1,0 +1,16 @@
+{
+  "code": 0,
+  "message": null,
+  "resultData": {
+    "loginAdmin": {
+      "adminId": 1,
+      "adminName": "admin",
+      "adminPhone": "13300000001",
+      "adminEmail": "asiodfyioasydfoi@qq.com",
+      "adminPassword": "1",
+      "adminImage": "upload-images/admin-images/admin.jpg",
+      "adminPower": 1,
+      "adminState": 1
+    }
+  }
+}
