@@ -1,17 +1,11 @@
 package com.zpark.mapper;
 
 import com.zpark.entity.Users;
+import tk.mybatis.mapper.common.Mapper;
 
-public interface UsersMapper {
-    int deleteByPrimaryKey(Integer userId);
+import java.util.List;
 
-    int insert(Users record);
+public interface UsersMapper extends Mapper<Users> {
 
-    int insertSelective(Users record);
-
-    Users selectByPrimaryKey(Integer userId);
-
-    int updateByPrimaryKeySelective(Users record);
-
-    int updateByPrimaryKey(Users record);
+    List<Users> selectPages(Users users);
 }
