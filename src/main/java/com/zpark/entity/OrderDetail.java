@@ -1,6 +1,12 @@
 package com.zpark.entity;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 public class OrderDetail {
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer orderDetailId;
 
     private Integer orderId;

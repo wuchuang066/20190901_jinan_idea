@@ -10,73 +10,73 @@
   <sql id="Base_Column_List" >
     receiver_id, receiver_name, receiver_serial, receiver_note
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
-    <include refid="Base_Column_List" />
-    from receiver
-    where receiver_id = #{receiverId,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
-    delete from receiver
-    where receiver_id = #{receiverId,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.zpark.entity.Receiver" >
-    insert into receiver (receiver_id, receiver_name, receiver_serial, 
-      receiver_note)
-    values (#{receiverId,jdbcType=INTEGER}, #{receiverName,jdbcType=VARCHAR}, #{receiverSerial,jdbcType=INTEGER}, 
-      #{receiverNote,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.zpark.entity.Receiver" >
-    insert into receiver
-    <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="receiverId != null" >
-        receiver_id,
-      </if>
-      <if test="receiverName != null" >
-        receiver_name,
-      </if>
-      <if test="receiverSerial != null" >
-        receiver_serial,
-      </if>
-      <if test="receiverNote != null" >
-        receiver_note,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="receiverId != null" >
-        #{receiverId,jdbcType=INTEGER},
-      </if>
-      <if test="receiverName != null" >
-        #{receiverName,jdbcType=VARCHAR},
-      </if>
-      <if test="receiverSerial != null" >
-        #{receiverSerial,jdbcType=INTEGER},
-      </if>
-      <if test="receiverNote != null" >
-        #{receiverNote,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.zpark.entity.Receiver" >
-    update receiver
-    <set >
-      <if test="receiverName != null" >
-        receiver_name = #{receiverName,jdbcType=VARCHAR},
-      </if>
-      <if test="receiverSerial != null" >
-        receiver_serial = #{receiverSerial,jdbcType=INTEGER},
-      </if>
-      <if test="receiverNote != null" >
-        receiver_note = #{receiverNote,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where receiver_id = #{receiverId,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.zpark.entity.Receiver" >
-    update receiver
-    set receiver_name = #{receiverName,jdbcType=VARCHAR},
-      receiver_serial = #{receiverSerial,jdbcType=INTEGER},
-      receiver_note = #{receiverNote,jdbcType=VARCHAR}
-    where receiver_id = #{receiverId,jdbcType=INTEGER}
-  </update>
+<!--  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >-->
+<!--    select -->
+<!--    <include refid="Base_Column_List" />-->
+<!--    from receiver-->
+<!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
+<!--  </select>-->
+<!--  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >-->
+<!--    delete from receiver-->
+<!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
+<!--  </delete>-->
+<!--  <insert id="insert" parameterType="com.zpark.entity.Receiver" >-->
+<!--    insert into receiver (receiver_id, receiver_name, receiver_serial, -->
+<!--      receiver_note)-->
+<!--    values (#{receiverId,jdbcType=INTEGER}, #{receiverName,jdbcType=VARCHAR}, #{receiverSerial,jdbcType=INTEGER}, -->
+<!--      #{receiverNote,jdbcType=VARCHAR})-->
+<!--  </insert>-->
+<!--  <insert id="insertSelective" parameterType="com.zpark.entity.Receiver" >-->
+<!--    insert into receiver-->
+<!--    <trim prefix="(" suffix=")" suffixOverrides="," >-->
+<!--      <if test="receiverId != null" >-->
+<!--        receiver_id,-->
+<!--      </if>-->
+<!--      <if test="receiverName != null" >-->
+<!--        receiver_name,-->
+<!--      </if>-->
+<!--      <if test="receiverSerial != null" >-->
+<!--        receiver_serial,-->
+<!--      </if>-->
+<!--      <if test="receiverNote != null" >-->
+<!--        receiver_note,-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--    <trim prefix="values (" suffix=")" suffixOverrides="," >-->
+<!--      <if test="receiverId != null" >-->
+<!--        #{receiverId,jdbcType=INTEGER},-->
+<!--      </if>-->
+<!--      <if test="receiverName != null" >-->
+<!--        #{receiverName,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="receiverSerial != null" >-->
+<!--        #{receiverSerial,jdbcType=INTEGER},-->
+<!--      </if>-->
+<!--      <if test="receiverNote != null" >-->
+<!--        #{receiverNote,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--  </insert>-->
+<!--  <update id="updateByPrimaryKeySelective" parameterType="com.zpark.entity.Receiver" >-->
+<!--    update receiver-->
+<!--    <set >-->
+<!--      <if test="receiverName != null" >-->
+<!--        receiver_name = #{receiverName,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="receiverSerial != null" >-->
+<!--        receiver_serial = #{receiverSerial,jdbcType=INTEGER},-->
+<!--      </if>-->
+<!--      <if test="receiverNote != null" >-->
+<!--        receiver_note = #{receiverNote,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--    </set>-->
+<!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
+<!--  </update>-->
+<!--  <update id="updateByPrimaryKey" parameterType="com.zpark.entity.Receiver" >-->
+<!--    update receiver-->
+<!--    set receiver_name = #{receiverName,jdbcType=VARCHAR},-->
+<!--      receiver_serial = #{receiverSerial,jdbcType=INTEGER},-->
+<!--      receiver_note = #{receiverNote,jdbcType=VARCHAR}-->
+<!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
+<!--  </update>-->
 </mapper>

@@ -2,7 +2,9 @@ package com.zpark.controller;
 
 import com.github.pagehelper.PageInfo;
 import com.zpark.entity.Admins;
+import com.zpark.entity.Receiver;
 import com.zpark.service.AdminsService;
+import com.zpark.service.ReceiverService;
 import com.zpark.utils.ResultObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -25,6 +27,9 @@ public class AdminsController {
     @Autowired
     private AdminsService adminsService;
 
+    @Autowired
+    private ReceiverService receiverService;
+
     /**
      * 功能描述 管理员登陆方法
      *
@@ -39,10 +44,13 @@ public class AdminsController {
         ResultObject ro = new ResultObject();
         try {
             Admins login = this.adminsService.login(admins);
+            // 获得所有一级类别的信息
+            List<Receiver> receivers = this.receiverService.selectAll();
             if (login != null) {
                 ro.setCode(0);
                 Map<String, Object> map = new HashMap<>();
                 map.put("loginAdmin", login);
+                map.put("receivers",receivers);
                 ro.setResultData(map);
                 return ro;
             }

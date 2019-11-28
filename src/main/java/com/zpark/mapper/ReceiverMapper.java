@@ -1,17 +1,7 @@
 package com.zpark.mapper;
 
 import com.zpark.entity.Receiver;
+import tk.mybatis.mapper.common.Mapper;
 
-public interface ReceiverMapper {
-    int deleteByPrimaryKey(Integer receiverId);
-
-    int insert(Receiver record);
-
-    int insertSelective(Receiver record);
-
-    Receiver selectByPrimaryKey(Integer receiverId);
-
-    int updateByPrimaryKeySelective(Receiver record);
-
-    int updateByPrimaryKey(Receiver record);
+public interface ReceiverMapper extends Mapper<Receiver> {
 }

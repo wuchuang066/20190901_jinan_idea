@@ -1,17 +1,8 @@
 package com.zpark.mapper;
 
 import com.zpark.entity.Level;
+import tk.mybatis.mapper.common.Mapper;
 
-public interface LevelMapper {
-    int deleteByPrimaryKey(Integer levelId);
+public interface LevelMapper extends Mapper<Level> {
 
-    int insert(Level record);
-
-    int insertSelective(Level record);
-
-    Level selectByPrimaryKey(Integer levelId);
-
-    int updateByPrimaryKeySelective(Level record);
-
-    int updateByPrimaryKey(Level record);
 }

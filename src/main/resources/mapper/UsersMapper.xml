@@ -26,7 +26,7 @@
             <if test="userName != null and userName !=''">
                 and user_name like concat('%',#{userName,jdbcType=VARCHAR},'%')
             </if>
-            <if test="userSex != -1 and  userSex!=''">
+            <if test="userSex != -1 and  userSex!=null">
                 and user_sex = #{userSex,jdbcType=INTEGER}
             </if>
             <if test="userAddress != null and userAddress !=''">
