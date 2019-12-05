@@ -10,6 +10,14 @@ public class Goods {
     private Integer goodsId;
 
     private String goodsName;
+    /**
+     * 功能描述 添加 最大价格 最小价格 一级类别
+     */
+    private Double priceMin;
+
+    private Double priceMax;
+
+    private Integer receiverId;
 
     private Double goodsPrice;
 
@@ -125,5 +133,29 @@ public class Goods {
 
     public void setGoodsStock(Integer goodsStock) {
         this.goodsStock = goodsStock;
+    }
+
+    public Double getPriceMin() {
+        return priceMin;
+    }
+
+    public void setPriceMin(Double priceMin) {
+        this.priceMin = priceMin;
+    }
+
+    public Double getPriceMax() {
+        return priceMax;
+    }
+
+    public void setPriceMax(Double priceMax) {
+        this.priceMax = priceMax;
+    }
+
+    public Integer getReceiverId() {
+        return receiverId;
+    }
+
+    public void setReceiverId(Integer receiverId) {
+        this.receiverId = receiverId;
     }
 }

@@ -32,8 +32,6 @@ public class AdminsServiceImpl implements AdminsService {
 
     @Override
     public PageInfo<Admins> selectPages(Admins admins, Integer pageNumber) {
-        String adminName = admins.getAdminName();
-
         PageHelper.startPage(pageNumber, Integer.parseInt(Page.getName(6)));
         List<Admins> adminsPages = this.adminsMapper.selectPages(admins);
         return new PageInfo<>(adminsPages);

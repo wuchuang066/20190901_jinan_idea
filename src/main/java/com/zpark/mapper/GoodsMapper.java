@@ -1,17 +1,13 @@
 package com.zpark.mapper;
 
 import com.zpark.entity.Goods;
+import tk.mybatis.mapper.common.Mapper;
 
-public interface GoodsMapper {
-    int deleteByPrimaryKey(Integer goodsId);
+import java.util.List;
 
-    int insert(Goods record);
+public interface GoodsMapper extends Mapper<Goods> {
 
-    int insertSelective(Goods record);
+    List<Goods> selectPages(Goods goods);
 
-    Goods selectByPrimaryKey(Integer goodsId);
 
-    int updateByPrimaryKeySelective(Goods record);
-
-    int updateByPrimaryKey(Goods record);
 }

@@ -2,16 +2,9 @@ package com.zpark.mapper;
 
 import com.zpark.entity.Orders;
 
+import java.util.List;
+
 public interface OrdersMapper {
-    int deleteByPrimaryKey(Integer orderId);
-
-    int insert(Orders record);
-
-    int insertSelective(Orders record);
-
-    Orders selectByPrimaryKey(Integer orderId);
-
-    int updateByPrimaryKeySelective(Orders record);
-
-    int updateByPrimaryKey(Orders record);
+    // 连表查询时候不能使用通用mapper 否则会报错
+    List<Orders> selectPages(Orders orders);
 }

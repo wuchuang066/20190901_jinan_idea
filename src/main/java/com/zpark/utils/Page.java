@@ -2,12 +2,11 @@ package com.zpark.utils;
 
 /**
  * @desc:
- * @Author: Yongkang Hou
- * @Date: 2018/6/28 下午5:07
+ * @Author: wuc
  */
 public enum Page {
     RED("红色", 1), GREEN("绿色", 2), BLANK("白色", 3), YELLO("黄色", 4),
-    PAGESIZE("6", 6);
+    PAGESIZE("6", 6),PAGESIZEGOODS("12", 12);
     // 成员变量
     private String name;
     private int index;

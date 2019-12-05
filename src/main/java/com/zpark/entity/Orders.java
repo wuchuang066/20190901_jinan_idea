@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class Orders {
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer orderId;
 
     private Integer userId;
@@ -23,6 +23,45 @@ public class Orders {
     private Integer orderState;
 
     private String orderNote;
+
+    /**
+     * 功能描述:用户信息
+     */
+    private Users users;
+
+    /**
+     * 功能描述 时间下限
+     */
+    private Date orderDateMin;
+
+    /**
+     * 功能描述 时间上限
+     */
+    private Date orderDateMax;
+
+    public Date getOrderDateMin() {
+        return orderDateMin;
+    }
+
+    public void setOrderDateMin(Date orderDateMin) {
+        this.orderDateMin = orderDateMin;
+    }
+
+    public Date getOrderDateMax() {
+        return orderDateMax;
+    }
+
+    public void setOrderDateMax(Date orderDateMax) {
+        this.orderDateMax = orderDateMax;
+    }
+
+    public Users getUsers() {
+        return users;
+    }
+
+    public void setUsers(Users users) {
+        this.users = users;
+    }
 
     public Integer getOrderId() {
         return orderId;
