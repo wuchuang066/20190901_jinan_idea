@@ -30,7 +30,7 @@ public class OrdersServiceImpl implements OrdersService {
         Date orderDateMax = orders.getOrderDateMax();
         Date orderDateMin = orders.getOrderDateMin();
         if (orderDateMax != null && orderDateMin != null) {
-            if (orderDateMin.after(orderDateMax) ) {
+            if (orderDateMin.after(orderDateMax)) {
                 orders.setOrderDateMax(orderDateMin);
                 orders.setOrderDateMin(orderDateMax);
             }
@@ -38,5 +38,25 @@ public class OrdersServiceImpl implements OrdersService {
         PageHelper.startPage(pageNumber, Integer.parseInt(Page.getName(6)));
         List<Orders> list = this.ordersMapper.selectPages(orders);
         return new PageInfo<>(list);
+    }
+
+    /**
+     * 功能描述  orders图表数据查询
+     * @author
+     * @date 2019/12/11 13:47
+     * @param orders
+     * @return java.util.List<com.zpark.entity.Orders>
+     */
+    @Override
+    public List<Orders> selectOrderGroup(Orders orders) {
+        // 如果时间上限晚于下限 则交换
+        Date orderDateMax = orders.getOrderDateMax();
+        Date orderDateMin = orders.getOrderDateMin();
+        if (orderDateMin.after(orderDateMax)) {
+            orders.setOrderDateMax(orderDateMin);
+            orders.setOrderDateMin(orderDateMax);
+        }
+        List<Orders> list = this.ordersMapper.selectGroup(orders);
+        return list;
     }
 }

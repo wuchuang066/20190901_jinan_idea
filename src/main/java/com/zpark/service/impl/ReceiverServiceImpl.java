@@ -29,4 +29,8 @@ public class ReceiverServiceImpl implements ReceiverService {
     public List<Receiver> selectAll() {
         return this.receiverMapper.selectAll();
     }
+    @Override
+    public List<Receiver> selectGroup(){
+        return this.receiverMapper.selectGroup();
+    }
 }

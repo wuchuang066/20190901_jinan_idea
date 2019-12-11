@@ -88,4 +88,21 @@ public class GoodsController {
         result.setMessage("修改商品信息失败！");
         return result;
     }
+
+    @RequestMapping("insert")
+    public ResultObject insert(Goods goods){
+        ResultObject result = new ResultObject();
+        try {
+            Integer integer = this.goodsService.insert(goods);
+            if (integer > 0) {
+                result.setCode(0);
+                return result;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        result.setCode(1);
+        result.setMessage("添加商品信息失败！");
+        return result;
+    }
 }

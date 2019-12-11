@@ -45,5 +45,6 @@
                 and r.receiver_id = #{receiverId}
             </if>
         </trim>
+        order by goods_id desc
     </select>
 </mapper>

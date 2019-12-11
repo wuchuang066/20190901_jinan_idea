@@ -1,5 +1,7 @@
 package com.zpark.entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -24,6 +26,26 @@ public class Orders {
 
     private String orderNote;
 
+    private String groupDate;
+
+    private Double groupPrice;
+
+    public String getGroupDate() {
+        return groupDate;
+    }
+
+    public void setGroupDate(String groupDate) {
+        this.groupDate = groupDate;
+    }
+
+    public Double getGroupPrice() {
+        return groupPrice;
+    }
+
+    public void setGroupPrice(Double groupPrice) {
+        this.groupPrice = groupPrice;
+    }
+
     /**
      * 功能描述:用户信息
      */
@@ -32,11 +54,13 @@ public class Orders {
     /**
      * 功能描述 时间下限
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date orderDateMin;
 
     /**
      * 功能描述 时间上限
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date orderDateMax;
 
     public Date getOrderDateMin() {

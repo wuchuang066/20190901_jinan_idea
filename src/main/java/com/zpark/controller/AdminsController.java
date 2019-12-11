@@ -24,8 +24,13 @@ import java.util.Map;
 @Controller
 @RequestMapping("admin")
 public class AdminsController {
-    @Autowired
+
     private AdminsService adminsService;
+
+    @Autowired
+    public void setAdminsService(AdminsService adminsService) {
+        this.adminsService = adminsService;
+    }
 
     @Autowired
     private ReceiverService receiverService;

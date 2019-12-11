@@ -3,6 +3,7 @@ package com.zpark.entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 public class Goods {
     @Id
@@ -13,10 +14,11 @@ public class Goods {
     /**
      * 功能描述 添加 最大价格 最小价格 一级类别
      */
+    @Transient
     private Double priceMin;
-
+    @Transient
     private Double priceMax;
-
+    @Transient
     private Integer receiverId;
 
     private Double goodsPrice;

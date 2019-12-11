@@ -13,4 +13,6 @@ import java.util.List;
  */
 public interface ReceiverService {
     List<Receiver> selectAll();
+
+    List<Receiver> selectGroup();
 }

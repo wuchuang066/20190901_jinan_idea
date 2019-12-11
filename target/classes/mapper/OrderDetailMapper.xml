@@ -12,7 +12,13 @@
   <sql id="Base_Column_List" >
     order_detail_id, order_id, goods_id, goods_name, deal_price, deal_number
   </sql>
-  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="selectPages" resultType="com.zpark.entity.OrderDetail">
+    select
+    <include refid="Base_Column_List" />
+    from order_detail
+    where order_id = #{orderId,jdbcType=INTEGER}
+  </select>
+  <!--<select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
     <include refid="Base_Column_List" />
     from order_detail
@@ -102,5 +108,5 @@
       deal_price = #{dealPrice,jdbcType=DOUBLE},
       deal_number = #{dealNumber,jdbcType=INTEGER}
     where order_detail_id = #{orderDetailId,jdbcType=INTEGER}
-  </update>
+  </update>-->
 </mapper>

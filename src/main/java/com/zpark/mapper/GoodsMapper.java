@@ -9,5 +9,4 @@ public interface GoodsMapper extends Mapper<Goods> {
 
     List<Goods> selectPages(Goods goods);
 
-
 }

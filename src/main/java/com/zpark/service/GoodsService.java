@@ -18,4 +18,6 @@ public interface GoodsService {
      * @date 2019/12/3 15:21
      */
     Integer updateConditions(Goods goods);
+
+    Integer insert(Goods goods);
 }

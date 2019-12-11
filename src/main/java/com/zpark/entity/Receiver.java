@@ -3,6 +3,7 @@ package com.zpark.entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 
 public class Receiver {
     @Id
@@ -14,6 +15,18 @@ public class Receiver {
     private Integer receiverSerial;
 
     private String receiverNote;
+
+    /* 商品平均价格*/
+    @Transient
+    private Double avgPrice;
+
+    public Double getAvgPrice() {
+        return avgPrice;
+    }
+
+    public void setAvgPrice(Double avgPrice) {
+        this.avgPrice = avgPrice;
+    }
 
     public Integer getReceiverId() {
         return receiverId;

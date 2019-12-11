@@ -33,16 +33,16 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public PageInfo<Goods> queryPages(Goods goods, Integer pageNumber) {
         Double priceMin = goods.getPriceMin();
-        if(priceMin == null ){
+        if (priceMin == null) {
             goods.setPriceMin(0d);
         }
         Double priceMax = goods.getPriceMax();
-        if(priceMax == null){
+        if (priceMax == null) {
             goods.setPriceMax(0d);
         }
         // 如果最高价小于最低价 进行交换
-        if(priceMin!= null && priceMax!= null){
-            if(priceMin>priceMax){
+        if (priceMin != null && priceMax != null) {
+            if (priceMin > priceMax) {
                 goods.setPriceMax(priceMin);
                 goods.setPriceMin(priceMax);
             }
@@ -63,5 +63,18 @@ public class GoodsServiceImpl implements GoodsService {
     @Override
     public Integer updateConditions(Goods goods) {
         return this.goodsMapper.updateByPrimaryKeySelective(goods);
+    }
+
+    /**
+     * 功能描述: 插入商品信息
+     *
+     * @param goods
+     * @return java.lang.Integer
+     * @author wuc
+     * @date 2019/12/5 19:02
+     */
+    @Override
+    public Integer insert(Goods goods) {
+        return this.goodsMapper.insert(goods);
     }
 }
