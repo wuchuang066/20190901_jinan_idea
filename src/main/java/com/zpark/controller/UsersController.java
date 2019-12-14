@@ -1,5 +1,4 @@
 package com.zpark.controller;
-
 import com.github.pagehelper.PageInfo;
 import com.zpark.entity.Users;
 import com.zpark.service.UsersService;
@@ -55,6 +54,7 @@ public class UsersController {
         result.setCode(1);
         return result;
     }
+
     @RequestMapping("updateUserState")
     @ResponseBody
     public ResultObject updateByPri(Users users) {
@@ -66,10 +66,61 @@ public class UsersController {
                 return result;
             }
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         result.setCode(1);
         result.setMessage("修改用户信息失败！");
+        return result;
+    }
+
+    @RequestMapping("register")
+    @ResponseBody
+    public ResultObject insert(Users user) {
+        ResultObject result = new ResultObject();
+        try {
+            Integer integer = this.usersService.insert(user);
+            if (integer > 0) {
+                result.setCode(0);
+                Map<String, Object> map = new HashMap<>();
+                map.put("userId", user.getUserId());
+                result.setResultData(map);
+                return result;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        result.setCode(1);
+        result.setMessage("注册用户信息失败！");
+        return result;
+
+    }
+
+    /**
+     * 功能描述 用户登录
+     *
+     * @param user
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/12 11:11
+     */
+    @RequestMapping("login")
+    @ResponseBody
+    public ResultObject login(Users user) {
+        ResultObject result = new ResultObject();
+        try {
+            Users loginUser = this.usersService.login(user);
+            if (loginUser != null) {
+                result.setCode(0);
+                Map<String, Object> map = new HashMap<>();
+                map.put("loginUser", loginUser);
+                result.setResultData(map);
+                return result;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        result.setCode(1);
+        result.setMessage("用户登录失败！");
         return result;
     }
 }

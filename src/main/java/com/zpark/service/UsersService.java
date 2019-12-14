@@ -14,4 +14,8 @@ public interface UsersService {
     PageInfo<Users> selectUserPages(Users users, Integer pageNumber);
 
     Integer updateUser(Users users);
+
+    Integer insert(Users user);
+
+    Users login(Users users);
 }

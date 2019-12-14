@@ -34,6 +34,14 @@
             </if>
         </where>
     </select>
+    <select id="login" resultType="com.zpark.entity.Users" parameterType="Users">
+        select
+        <include refid="Base_Column_List"/>
+        from users
+        where user_id = #{userId,jdbcType=INTEGER}
+        and user_password = #{userPassword,jdbcType=VARCHAR}
+        and user_state = 1
+    </select>
     <!--  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >-->
     <!--    select -->
     <!--    <include refid="Base_Column_List" />-->
@@ -55,73 +63,74 @@
     <!--      #{userAddress,jdbcType=VARCHAR}, #{userImage,jdbcType=VARCHAR}, #{userDate,jdbcType=TIMESTAMP}, -->
     <!--      #{userState,jdbcType=INTEGER})-->
     <!--  </insert>-->
-    <!--  <insert id="insertSelective" parameterType="com.zpark.entity.Users" >-->
-    <!--    insert into users-->
-    <!--    <trim prefix="(" suffix=")" suffixOverrides="," >-->
-    <!--      <if test="userId != null" >-->
-    <!--        user_id,-->
-    <!--      </if>-->
-    <!--      <if test="userName != null" >-->
-    <!--        user_name,-->
-    <!--      </if>-->
-    <!--      <if test="userPassword != null" >-->
-    <!--        user_password,-->
-    <!--      </if>-->
-    <!--      <if test="userSex != null" >-->
-    <!--        user_sex,-->
-    <!--      </if>-->
-    <!--      <if test="userEmail != null" >-->
-    <!--        user_email,-->
-    <!--      </if>-->
-    <!--      <if test="userPhone != null" >-->
-    <!--        user_phone,-->
-    <!--      </if>-->
-    <!--      <if test="userAddress != null" >-->
-    <!--        user_address,-->
-    <!--      </if>-->
-    <!--      <if test="userImage != null" >-->
-    <!--        user_image,-->
-    <!--      </if>-->
-    <!--      <if test="userDate != null" >-->
-    <!--        user_date,-->
-    <!--      </if>-->
-    <!--      <if test="userState != null" >-->
-    <!--        user_state,-->
-    <!--      </if>-->
-    <!--    </trim>-->
-    <!--    <trim prefix="values (" suffix=")" suffixOverrides="," >-->
-    <!--      <if test="userId != null" >-->
-    <!--        #{userId,jdbcType=INTEGER},-->
-    <!--      </if>-->
-    <!--      <if test="userName != null" >-->
-    <!--        #{userName,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="userPassword != null" >-->
-    <!--        #{userPassword,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="userSex != null" >-->
-    <!--        #{userSex,jdbcType=INTEGER},-->
-    <!--      </if>-->
-    <!--      <if test="userEmail != null" >-->
-    <!--        #{userEmail,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="userPhone != null" >-->
-    <!--        #{userPhone,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="userAddress != null" >-->
-    <!--        #{userAddress,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="userImage != null" >-->
-    <!--        #{userImage,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="userDate != null" >-->
-    <!--        #{userDate,jdbcType=TIMESTAMP},-->
-    <!--      </if>-->
-    <!--      <if test="userState != null" >-->
-    <!--        #{userState,jdbcType=INTEGER},-->
-    <!--      </if>-->
-    <!--    </trim>-->
-    <!--  </insert>-->
+    <insert id="insertSelectiveKey" parameterType="com.zpark.entity.Users" keyColumn="user_id" keyProperty="userId"
+            useGeneratedKeys="true">
+        insert into users
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="userPassword != null">
+                user_password,
+            </if>
+            <if test="userSex != null">
+                user_sex,
+            </if>
+            <if test="userEmail != null">
+                user_email,
+            </if>
+            <if test="userPhone != null">
+                user_phone,
+            </if>
+            <if test="userAddress != null">
+                user_address,
+            </if>
+            <if test="userImage != null">
+                user_image,
+            </if>
+            <if test="userDate != null">
+                user_date,
+            </if>
+            <if test="userState != null">
+                user_state,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId,jdbcType=INTEGER},
+            </if>
+            <if test="userName != null">
+                #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="userPassword != null">
+                #{userPassword,jdbcType=VARCHAR},
+            </if>
+            <if test="userSex != null">
+                #{userSex,jdbcType=INTEGER},
+            </if>
+            <if test="userEmail != null">
+                #{userEmail,jdbcType=VARCHAR},
+            </if>
+            <if test="userPhone != null">
+                #{userPhone,jdbcType=VARCHAR},
+            </if>
+            <if test="userAddress != null">
+                #{userAddress,jdbcType=VARCHAR},
+            </if>
+            <if test="userImage != null">
+                #{userImage,jdbcType=VARCHAR},
+            </if>
+            <if test="userDate != null">
+                #{userDate,jdbcType=TIMESTAMP},
+            </if>
+            <if test="userState != null">
+                #{userState,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
     <!--  <update id="updateByPrimaryKeySelective" parameterType="com.zpark.entity.Users" >-->
     <!--    update users-->
     <!--    <set >-->
