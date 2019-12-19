@@ -89,8 +89,16 @@ public class GoodsController {
         return result;
     }
 
+    /**
+     * 功能描述  添加商品
+     *
+     * @param goods
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/18 10:31
+     */
     @RequestMapping("insert")
-    public ResultObject insert(Goods goods){
+    public ResultObject insert(Goods goods) {
         ResultObject result = new ResultObject();
         try {
             Integer integer = this.goodsService.insert(goods);
@@ -103,6 +111,34 @@ public class GoodsController {
         }
         result.setCode(1);
         result.setMessage("添加商品信息失败！");
+        return result;
+    }
+
+    /**
+     * 功能描述 根据商品主键查询商品信息
+     *
+     * @param goodsId
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/18 10:39
+     */
+    @RequestMapping("selectByGoodsId/{goodsId}")
+    public ResultObject selectByGoodsId(@PathVariable Integer goodsId) {
+        ResultObject result = new ResultObject();
+        try {
+            Goods goods = this.goodsService.selectByGoodsId(goodsId);
+            if (goods != null && !"".equals(goods)) {
+                result.setCode(0);
+                Map<String, Object> map = new HashMap<>();
+                map.put("goodsMessage", goods);
+                result.setResultData(map);
+                return result;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        result.setCode(1);
+        result.setMessage("查询商品信息失败！");
         return result;
     }
 }

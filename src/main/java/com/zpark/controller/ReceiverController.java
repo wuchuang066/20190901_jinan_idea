@@ -87,4 +87,34 @@ public class ReceiverController {
         rs.setMessage("分组查询表格数据失败！");
         return rs;
     }
+
+    /**
+     * 功能描述 查询所有一级类别信息以及以及类别对应的二级类别信息
+     *
+     * @param
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/16 9:49
+     */
+    @GetMapping("init")
+    public ResultObject select() {
+        ResultObject rs = new ResultObject();
+        try {
+            List<Receiver> receivers = this.receiverService.selectReceiver();
+            Receiver goods1 = this.receiverService.selectGoods(1);
+            if (receivers != null && receivers.size() > 0) {
+                rs.setCode(0);
+                Map<String, Object> map = new HashMap<>();
+                map.put("receiverAndLevel", receivers);
+                map.put("goods1", goods1);
+                rs.setResultData(map);
+                return rs;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        rs.setCode(0);
+        rs.setMessage("查询一级类别以及对应的二级类别数据失败,请联系管理员!");
+        return rs;
+    }
 }

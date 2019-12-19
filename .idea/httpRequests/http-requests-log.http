@@ -1,3 +1,19 @@
+GET http://localhost:8080/shopping_manage/goods/selectByGoodsId/23
+Accept: application/json
+Cache-Control: no-cache
+
+<> 2019-12-18T104116.200.json
+
+###
+
+GET http://localhost:8080/shopping_manage/receiver/select
+Accept: application/json
+Cache-Control: no-cache
+
+<> 2019-12-16T100328.200.json
+
+###
+
 GET http://localhost:8080/shopping_manage/user/login?userId=1&userPassword=1
 Accept: application/json
 Cache-Control: no-cache
@@ -405,26 +421,6 @@ Cache-Control: no-cache
  { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
 
 <> 2019-11-20T110911.200.json
-
-###
-
-POST http://localhost:8080/shopping_manage/admin/register
-Accept: */*
-Cache-Control: no-cache
-
- { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
-
-<> 2019-11-20T110853.200.json
-
-###
-
-GET http://localhost:8080/shopping_manage/admin/register?adminName=1&adminPhone=22&adminEmail=3&adminPassword=4&adminImage=5&adminPower=1&adminState=66
-Accept: */*
-Cache-Control: no-cache
-
- { 						"adminName": "123", 						"adminPhone": "123", 						"adminEmail": "123", 						"adminPassword": "123", 						"adminImage": "123", 						"adminPower": 1, 						"adminState": 1 					}
-
-<> 2019-11-20T110749.200.json
 
 ###
 

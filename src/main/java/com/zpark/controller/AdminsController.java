@@ -55,7 +55,7 @@ public class AdminsController {
                 ro.setCode(0);
                 Map<String, Object> map = new HashMap<>();
                 map.put("loginAdmin", login);
-                map.put("receivers",receivers);
+                map.put("receivers", receivers);
                 ro.setResultData(map);
                 return ro;
             }
@@ -150,6 +150,14 @@ public class AdminsController {
         return result;
     }
 
+    /**
+     * 功能描述 更新
+     *
+     * @param admins
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/16 8:41
+     */
     @RequestMapping("update")
     @ResponseBody
     public ResultObject updateByPri(Admins admins) {

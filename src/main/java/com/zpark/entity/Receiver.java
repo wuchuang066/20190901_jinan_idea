@@ -4,6 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
+import java.util.List;
 
 public class Receiver {
     @Id
@@ -19,6 +20,23 @@ public class Receiver {
     /* 商品平均价格*/
     @Transient
     private Double avgPrice;
+
+    /**
+     * 功能描述 保存当前一级类别的二级类别信息
+     */
+    @Transient
+    private List<Level> levelList;
+
+    @Transient
+    private List<Goods> goodsList;
+
+    public List<Goods> getGoodsList() {
+        return goodsList;
+    }
+
+    public void setGoodsList(List<Goods> goodsList) {
+        this.goodsList = goodsList;
+    }
 
     public Double getAvgPrice() {
         return avgPrice;
@@ -59,4 +77,13 @@ public class Receiver {
     public void setReceiverNote(String receiverNote) {
         this.receiverNote = receiverNote == null ? null : receiverNote.trim();
     }
+
+    public List<Level> getLevelList() {
+        return levelList;
+    }
+
+    public void setLevelList(List<Level> levelList) {
+        this.levelList = levelList;
+    }
+
 }

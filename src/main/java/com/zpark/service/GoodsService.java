@@ -20,4 +20,6 @@ public interface GoodsService {
     Integer updateConditions(Goods goods);
 
     Integer insert(Goods goods);
+
+    Goods selectByGoodsId(Integer goodsId);
 }

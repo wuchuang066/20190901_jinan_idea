@@ -8,12 +8,17 @@
          version="4.0">
     <display-name>Archetype Created Web Application</display-name>
     <!--    配置spring的监听器-->
+    <!-- 1.监听范围对象的创建与销毁 2.修改范围对象的数据-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
     <!--    配置spring 防止内存溢出的监听器-->
     <listener>
         <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+    </listener>
+    <!--    配置spring util包下的监听器 放到下面 先注入spring-->
+    <listener>
+        <listener-class>com.zpark.utils.ApplicationListener</listener-class>
     </listener>
     <!--    全局信息,配置spring配置文件位置-->
     <context-param>

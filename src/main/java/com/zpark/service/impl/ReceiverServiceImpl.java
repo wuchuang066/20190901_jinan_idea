@@ -33,4 +33,14 @@ public class ReceiverServiceImpl implements ReceiverService {
     public List<Receiver> selectGroup(){
         return this.receiverMapper.selectGroup();
     }
+
+    @Override
+    public List<Receiver> selectReceiver() {
+        return this.receiverMapper.selectReceiver();
+    }
+
+    @Override
+    public Receiver selectGoods(Integer i) {
+        return this.receiverMapper.selectGoods(i);
+    }
 }

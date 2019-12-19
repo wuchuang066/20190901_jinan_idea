@@ -4,8 +4,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
+import java.io.Serializable;
 
-public class Goods {
+public class Goods implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer goodsId;
@@ -160,4 +161,5 @@ public class Goods {
     public void setReceiverId(Integer receiverId) {
         this.receiverId = receiverId;
     }
+
 }

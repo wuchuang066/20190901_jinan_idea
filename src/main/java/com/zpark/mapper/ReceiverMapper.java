@@ -7,5 +7,9 @@ import java.util.List;
 
 public interface ReceiverMapper extends Mapper<Receiver> {
 
-   List<Receiver> selectGroup();
+    List<Receiver> selectGroup();
+
+    List<Receiver> selectReceiver();
+
+    Receiver selectGoods(Integer receiverId);
 }

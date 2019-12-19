@@ -23,73 +23,75 @@
       ORDER BY
           2 DESC
     </select>
-    <!--  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >-->
-    <!--    select -->
-    <!--    <include refid="Base_Column_List" />-->
-    <!--    from receiver-->
-    <!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
-    <!--  </select>-->
-    <!--  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >-->
-    <!--    delete from receiver-->
-    <!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
-    <!--  </delete>-->
-    <!--  <insert id="insert" parameterType="com.zpark.entity.Receiver" >-->
-    <!--    insert into receiver (receiver_id, receiver_name, receiver_serial, -->
-    <!--      receiver_note)-->
-    <!--    values (#{receiverId,jdbcType=INTEGER}, #{receiverName,jdbcType=VARCHAR}, #{receiverSerial,jdbcType=INTEGER}, -->
-    <!--      #{receiverNote,jdbcType=VARCHAR})-->
-    <!--  </insert>-->
-    <!--  <insert id="insertSelective" parameterType="com.zpark.entity.Receiver" >-->
-    <!--    insert into receiver-->
-    <!--    <trim prefix="(" suffix=")" suffixOverrides="," >-->
-    <!--      <if test="receiverId != null" >-->
-    <!--        receiver_id,-->
-    <!--      </if>-->
-    <!--      <if test="receiverName != null" >-->
-    <!--        receiver_name,-->
-    <!--      </if>-->
-    <!--      <if test="receiverSerial != null" >-->
-    <!--        receiver_serial,-->
-    <!--      </if>-->
-    <!--      <if test="receiverNote != null" >-->
-    <!--        receiver_note,-->
-    <!--      </if>-->
-    <!--    </trim>-->
-    <!--    <trim prefix="values (" suffix=")" suffixOverrides="," >-->
-    <!--      <if test="receiverId != null" >-->
-    <!--        #{receiverId,jdbcType=INTEGER},-->
-    <!--      </if>-->
-    <!--      <if test="receiverName != null" >-->
-    <!--        #{receiverName,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="receiverSerial != null" >-->
-    <!--        #{receiverSerial,jdbcType=INTEGER},-->
-    <!--      </if>-->
-    <!--      <if test="receiverNote != null" >-->
-    <!--        #{receiverNote,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--    </trim>-->
-    <!--  </insert>-->
-    <!--  <update id="updateByPrimaryKeySelective" parameterType="com.zpark.entity.Receiver" >-->
-    <!--    update receiver-->
-    <!--    <set >-->
-    <!--      <if test="receiverName != null" >-->
-    <!--        receiver_name = #{receiverName,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--      <if test="receiverSerial != null" >-->
-    <!--        receiver_serial = #{receiverSerial,jdbcType=INTEGER},-->
-    <!--      </if>-->
-    <!--      <if test="receiverNote != null" >-->
-    <!--        receiver_note = #{receiverNote,jdbcType=VARCHAR},-->
-    <!--      </if>-->
-    <!--    </set>-->
-    <!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
-    <!--  </update>-->
-    <!--  <update id="updateByPrimaryKey" parameterType="com.zpark.entity.Receiver" >-->
-    <!--    update receiver-->
-    <!--    set receiver_name = #{receiverName,jdbcType=VARCHAR},-->
-    <!--      receiver_serial = #{receiverSerial,jdbcType=INTEGER},-->
-    <!--      receiver_note = #{receiverNote,jdbcType=VARCHAR}-->
-    <!--    where receiver_id = #{receiverId,jdbcType=INTEGER}-->
-    <!--  </update>-->
+    <!-- 一对多-->
+    <select id="selectReceiver" resultMap="ReceiverMap">
+        SELECT
+            r.receiver_id,
+            r.receiver_serial,
+            r.receiver_name,
+            l.level_id,
+            l.level_name
+        FROM
+            receiver r
+            JOIN LEVEL l ON r.receiver_id = l.receiver_id
+        ORDER BY
+            r.receiver_id,
+            r.receiver_serial
+    </select>
+    <resultMap id="ReceiverMap" type="com.zpark.entity.Receiver">
+        <id column="receiver_id" property="receiverId" jdbcType="INTEGER"/>
+        <result column="receiver_name" property="receiverName" jdbcType="VARCHAR"/>
+        <result column="receiver_serial" property="receiverSerial" jdbcType="INTEGER"/>
+        <result column="receiver_note" property="receiverNote" jdbcType="VARCHAR"/>
+        <collection property="levelList" ofType="Level">
+            <id column="level_id" property="levelId" jdbcType="INTEGER"/>
+            <result column="level_name" property="levelName" jdbcType="VARCHAR"/>
+            <result column="receiver_id" property="receiverId" jdbcType="INTEGER"/>
+            <result column="level_note" property="levelNote" jdbcType="VARCHAR"/>
+        </collection>
+    </resultMap>
+    <select id="selectGoods" resultMap="ReceiverGoodsMap" parameterType="java.lang.Integer">
+    SELECT
+        g.goods_id,
+        g.goods_name,
+        g.goods_price,
+        g.goods_discount,
+        g.goods_new,
+        g.goods_hot,
+        g.goods_upershelf,
+        g.goods_brief,
+        g.goods_introduction,
+        g.goods_image,
+        g.level_id,
+        g.goods_stock,
+        r.receiver_id,
+        r.receiver_name
+    FROM
+        goods g
+        JOIN `level` l ON g.level_id = l.level_id
+        JOIN receiver r ON r.receiver_id = l.receiver_id
+    WHERE
+        r.receiver_id = #{receiverId}
+        LIMIT 0,4
+    </select>
+    <resultMap id="ReceiverGoodsMap" type="com.zpark.entity.Receiver">
+        <id column="receiver_id" property="receiverId" jdbcType="INTEGER"/>
+        <result column="receiver_name" property="receiverName" jdbcType="VARCHAR"/>
+        <result column="receiver_serial" property="receiverSerial" jdbcType="INTEGER"/>
+        <result column="receiver_note" property="receiverNote" jdbcType="VARCHAR"/>
+        <collection property="goodsList" ofType="Goods">
+            <id column="goods_id" property="goodsId" jdbcType="INTEGER"/>
+            <result column="goods_name" property="goodsName" jdbcType="VARCHAR"/>
+            <result column="goods_price" property="goodsPrice" jdbcType="DOUBLE"/>
+            <result column="goods_discount" property="goodsDiscount" jdbcType="DOUBLE"/>
+            <result column="goods_new" property="goodsNew" jdbcType="INTEGER"/>
+            <result column="goods_hot" property="goodsHot" jdbcType="INTEGER"/>
+            <result column="goods_upershelf" property="goodsUpershelf" jdbcType="INTEGER"/>
+            <result column="goods_brief" property="goodsBrief" jdbcType="VARCHAR"/>
+            <result column="goods_introduction" property="goodsIntroduction" jdbcType="VARCHAR"/>
+            <result column="goods_image" property="goodsImage" jdbcType="VARCHAR"/>
+            <result column="level_id" property="levelId" jdbcType="INTEGER"/>
+            <result column="goods_stock" property="goodsStock" jdbcType="INTEGER"/>
+        </collection>
+    </resultMap>
 </mapper>

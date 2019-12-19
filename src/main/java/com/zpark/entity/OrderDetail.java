@@ -3,8 +3,11 @@ package com.zpark.entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
+import java.io.Serializable;
+import java.util.Objects;
 
-public class OrderDetail {
+public class OrderDetail implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer orderDetailId;
@@ -18,6 +21,20 @@ public class OrderDetail {
     private Double dealPrice;
 
     private Integer dealNumber;
+
+    /**
+     * 功能描述 保存商品信息
+     */
+    @Transient
+    private Goods goods;
+
+    public Goods getGoods() {
+        return goods;
+    }
+
+    public void setGoods(Goods goods) {
+        this.goods = goods;
+    }
 
     public Integer getOrderDetailId() {
         return orderDetailId;
@@ -65,5 +82,18 @@ public class OrderDetail {
 
     public void setDealNumber(Integer dealNumber) {
         this.dealNumber = dealNumber;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        OrderDetail that = (OrderDetail) o;
+        return goodsId.equals(that.goodsId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(goodsId);
     }
 }

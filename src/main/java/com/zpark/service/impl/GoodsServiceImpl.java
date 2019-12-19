@@ -77,4 +77,16 @@ public class GoodsServiceImpl implements GoodsService {
     public Integer insert(Goods goods) {
         return this.goodsMapper.insert(goods);
     }
+
+    /**
+     * 功能描述 根据主键查询商品信息
+     * @author
+     * @date 2019/12/18 10:28
+     * @param goodsId
+     * @return com.zpark.entity.Goods
+     */
+    @Override
+    public Goods selectByGoodsId(Integer goodsId) {
+        return this.goodsMapper.selectByPrimaryKey(goodsId);
+    }
 }
