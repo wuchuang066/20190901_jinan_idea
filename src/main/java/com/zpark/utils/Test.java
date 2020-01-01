@@ -1,5 +1,13 @@
 package com.zpark.utils;
 
+import com.alibaba.fastjson.JSONObject;
+import com.zpark.entity.Goods;
+import com.zpark.entity.OrderDetail;
+import com.zpark.entity.Orders;
+
+import java.util.ArrayList;
+import java.util.Date;
+
 /**
  * @author wuc
  * @date 2019/11/21 11:08
@@ -23,12 +31,50 @@ public class Test {
      */
 
     public static void main(String[] args) {
-        for (int i = 1; i <= 100; i++) {// 循环从1 开始 到100 看1~100的每一个数有几个约数
-            int yueshu = yueshu(i); // 调用求取约数的函数 返回这个数有几个约数
-            if(yueshu%2 != 0){ //对这个约数的个数进行对2取余数，如果是奇数个，对2取余数不是0  灯就是亮的 否则灯最终就是灭的
-                System.out.println("亮着的房间是："+i+"，有"+yueshu+"个约数！");
-            }
-        }
+//        for (int i = 1; i <= 100; i++) {// 循环从1 开始 到100 看1~100的每一个数有几个约数
+//            int yueshu = yueshu(i); // 调用求取约数的函数 返回这个数有几个约数
+//            if(yueshu%2 != 0){ //对这个约数的个数进行对2取余数，如果是奇数个，对2取余数不是0  灯就是亮的 否则灯最终就是灭的
+//                System.out.println("亮着的房间是："+i+"，有"+yueshu+"个约数！");
+//            }
+//        }
+//        String arrayString = "[399,389]";
+//        String[] split = arrayString.split(",");
+//        System.out.println(split);
+        Orders orders = new Orders();
+        orders.setOrderId(0);
+        orders.setUserId(0);
+        orders.setConsigneeName("");
+        orders.setConsigneeAddress("");
+        orders.setOrderPhone("");
+        orders.setOrderDate(new Date());
+        orders.setOrderState(0);
+        orders.setOrderNote("");
+        orders.setGroupDate("");
+        orders.setGroupPrice(0.0D);
+        ArrayList<OrderDetail> orderDetails1 = new ArrayList<>();
+        OrderDetail orderDetail = new OrderDetail();
+        orderDetail.setGoods(new Goods());
+        orderDetail.setOrderDetailId(0);
+        orderDetail.setOrderId(0);
+        orderDetail.setGoodsId(0);
+        orderDetail.setGoodsName("");
+        orderDetail.setDealPrice(0.0D);
+        orderDetail.setDealNumber(0);
+        orderDetails1.add(orderDetail);
+        OrderDetail orderDetail2 = new OrderDetail();
+        orderDetail2.setGoods(new Goods());
+        orderDetail2.setOrderDetailId(0);
+        orderDetail2.setOrderId(0);
+        orderDetail2.setGoodsId(0);
+        orderDetail2.setGoodsName("");
+        orderDetail2.setDealPrice(0.0D);
+        orderDetail2.setDealNumber(0);
+        orderDetails1.add(orderDetail2);
+
+        orders.setOrderDetailList(orderDetails1);
+        String s = JSONObject.toJSONString(orders);
+        System.out.println(s);
+
     }
     static int yueshu(int a) { // 声明一个函数 就和咱们C语言中刚学的声明一个函数是一样的  当然 static 目前你不需要了解是什么意思
         // 只需要知道static 这么写 可以直接调用这个函数就可以了

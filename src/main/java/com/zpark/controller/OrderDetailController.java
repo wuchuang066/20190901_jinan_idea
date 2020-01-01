@@ -1,5 +1,6 @@
 package com.zpark.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.github.pagehelper.PageInfo;
 import com.zpark.entity.OrderDetail;
 import com.zpark.service.OrderDetailService;
@@ -142,6 +143,85 @@ public class OrderDetailController {
         }
         rs.setCode(1);
         rs.setMessage("购物车信息获取失败！");
+        return rs;
+    }
+
+    /**
+     * 功能描述 移除指定用户购物车中的商品信息
+     *
+     * @param orderDetail
+     * @param userId
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/23 9:36
+     */
+    @GetMapping("removeshopCart/{userId}")
+    public ResultObject removeshopCart(OrderDetail orderDetail, @PathVariable Integer userId) {
+        ResultObject rs = new ResultObject();
+        try {
+            ValueOperations valueOperations = this.redisTemplate.opsForValue();
+            String key = "user" + userId;
+
+            List<OrderDetail> shopcart = (List<OrderDetail>) valueOperations.get(key);
+            boolean remove = shopcart.remove(orderDetail);
+            if (remove) {
+                //需要重新将新的购物车信息放到shopcart中
+                if (shopcart.size() == 0) {
+                    // 删除redis中指定键的数据
+                    this.redisTemplate.delete(key);
+                } else {
+                    valueOperations.set(key, shopcart);
+                }
+                rs.setCode(0);
+                return rs;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        rs.setCode(1);
+        rs.setMessage("购物车商品移除失败！");
+        return rs;
+    }
+
+    /**
+     * 功能描述 批量删除购物车中的商品信息
+     *
+     * @param goodsArray
+     * @return com.zpark.utils.ResultObject
+     * @author
+     * @date 2019/12/23 14:48
+     */
+    @PostMapping("removeSelectedshopCart/{userId}")
+    public ResultObject removeSelectedshopCart(@RequestBody String goodsArray, @PathVariable Integer userId) {
+        // 也可以直接用orderDetail类接收 不用JSONObject去解析一下
+        OrderDetail orderDetail = JSONObject.parseObject(goodsArray, OrderDetail.class);
+        Integer[] goodsId = orderDetail.getGoodsArray();
+        System.out.println(goodsId);
+        ResultObject rs = new ResultObject();
+        try {
+            ValueOperations valueOperations = this.redisTemplate.opsForValue();
+            String key = "user" + userId;
+            List<OrderDetail> shopcart = (List<OrderDetail>) valueOperations.get(key);
+            orderDetail = new OrderDetail();
+            if (shopcart != null && shopcart.size() > 0) {
+                for (Integer id : goodsId) {
+                    orderDetail.setGoodsId(id);
+                    shopcart.remove(orderDetail);
+                }
+            }
+            if (shopcart == null || shopcart.size() == 0) {
+                // 删除redis中指定键的数据
+                this.redisTemplate.delete(key);
+            } else {
+                valueOperations.set(key, shopcart);
+            }
+            rs.setCode(0);
+            return rs;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        rs.setCode(1);
+        rs.setMessage("批量移除购物车商品失败！");
         return rs;
     }
 }

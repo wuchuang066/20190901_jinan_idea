@@ -32,8 +32,12 @@
         <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
         <!--        设置当前过滤器私有信息 只有当前servlet 或者 Filter  可以看见 -->
         <init-param>
-            <param-name>charset</param-name>
+            <param-name>encoding</param-name>
             <param-value>utf-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>forceEncoding</param-name>
+            <param-value>true</param-value>
         </init-param>
     </filter>
     <filter-mapping>

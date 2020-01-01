@@ -3,10 +3,12 @@ package com.zpark.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.zpark.entity.Orders;
+import com.zpark.mapper.OrderDetailMapper;
 import com.zpark.mapper.OrdersMapper;
 import com.zpark.service.OrdersService;
 import com.zpark.utils.Page;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -23,6 +25,9 @@ import java.util.List;
 public class OrdersServiceImpl implements OrdersService {
     @Resource
     private OrdersMapper ordersMapper;
+
+    @Resource
+    private OrderDetailMapper orderDetailMapper;
 
     @Override
     public PageInfo<Orders> selectPages(Orders orders, Integer pageNumber) {
@@ -42,10 +47,11 @@ public class OrdersServiceImpl implements OrdersService {
 
     /**
      * 功能描述  orders图表数据查询
-     * @author
-     * @date 2019/12/11 13:47
+     *
      * @param orders
      * @return java.util.List<com.zpark.entity.Orders>
+     * @author
+     * @date 2019/12/11 13:47
      */
     @Override
     public List<Orders> selectOrderGroup(Orders orders) {
@@ -59,4 +65,21 @@ public class OrdersServiceImpl implements OrdersService {
         List<Orders> list = this.ordersMapper.selectGroup(orders);
         return list;
     }
+
+    @Override
+    //添加事务注释
+    @Transactional
+    public Integer insertOrderAndOrderDetail(Orders orders) {
+        orders.setOrderDate(new Date());
+        Integer integer = this.ordersMapper.insertOrder(orders);
+        if (integer > 0) {
+            Integer integer1 = this.orderDetailMapper.insertOrderDetail(orders);
+            if (integer1 > 0) {
+                return 1;
+            }
+        }
+        return 0;
+    }
+
+
 }

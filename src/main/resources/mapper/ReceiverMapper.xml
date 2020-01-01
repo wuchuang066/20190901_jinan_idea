@@ -72,7 +72,7 @@
         JOIN receiver r ON r.receiver_id = l.receiver_id
     WHERE
         r.receiver_id = #{receiverId}
-        LIMIT 0,4
+        LIMIT 0,5
     </select>
     <resultMap id="ReceiverGoodsMap" type="com.zpark.entity.Receiver">
         <id column="receiver_id" property="receiverId" jdbcType="INTEGER"/>

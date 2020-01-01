@@ -22,6 +22,16 @@ public class OrderDetail implements Serializable {
 
     private Integer dealNumber;
 
+    private Integer[] goodsArray;
+
+    public Integer[] getGoodsArray() {
+        return goodsArray;
+    }
+
+    public void setGoodsArray(Integer[] goodsArray) {
+        this.goodsArray = goodsArray;
+    }
+
     /**
      * 功能描述 保存商品信息
      */

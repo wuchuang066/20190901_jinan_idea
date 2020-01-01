@@ -1,6 +1,7 @@
 package com.zpark.mapper;
 
 import com.zpark.entity.OrderDetail;
+import com.zpark.entity.Orders;
 
 import java.util.List;
 
@@ -18,4 +19,6 @@ public interface OrderDetailMapper {
 //    int updateByPrimaryKey(OrderDetail record);
 
     List<OrderDetail> selectPages(Integer orderId);
+
+    Integer insertOrderDetail(Orders orders);
 }

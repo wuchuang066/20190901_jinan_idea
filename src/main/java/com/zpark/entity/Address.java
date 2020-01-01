@@ -1,9 +1,12 @@
 package com.zpark.entity;
 
+import lombok.ToString;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@ToString
 public class Address {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)

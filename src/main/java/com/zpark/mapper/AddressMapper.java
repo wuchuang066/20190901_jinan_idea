@@ -1,19 +1,8 @@
 package com.zpark.mapper;
 
 import com.zpark.entity.Address;
-import org.springframework.stereotype.Repository;
+import tk.mybatis.mapper.common.Mapper;
 
+public interface AddressMapper extends Mapper<Address> {
 
-public interface AddressMapper {
-    int deleteByPrimaryKey(Integer addressId);
-
-    int insert(Address record);
-
-    int insertSelective(Address record);
-
-    Address selectByPrimaryKey(Integer addressId);
-
-    int updateByPrimaryKeySelective(Address record);
-
-    int updateByPrimaryKey(Address record);
 }

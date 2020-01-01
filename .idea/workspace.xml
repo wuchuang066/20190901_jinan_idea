@@ -7,53 +7,166 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c01498fb-c66a-40fb-a835-c8847fea5424" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.annotation.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.ejb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.jms.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.persistence.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.resource.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.transaction.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/utils/ApplicationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/redis.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_12_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/AlipayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/AlipayMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/ExtendParams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/AddressServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zpark/utils/AlipayConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/shopping_manage_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shopping_manage_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-20T110749.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2019-11-20T110853.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shopping-manage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shopping-manage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/controller/AdminsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/AdminsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/GoodsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/AddressController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/controller/OrderDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/OrderDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/controller/ReceiverController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/ReceiverController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/controller/OrdersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/OrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/ReceiverMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/ReceiverMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/service/ReceiverService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/ReceiverService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/ReceiverServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/ReceiverServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/entity/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/AddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/AddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/OrderDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/OrdersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/mapper/OrdersMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/OrdersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/service/impl/OrdersServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zpark/utils/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zpark/utils/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/AddressMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/AddressMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/GoodsMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OrderDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrderDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/OrdersMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/OrdersMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/ReceiverMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/ReceiverMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/controller/AdminsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zpark/controller/AdminsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zpark/entity/Goods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zpark/entity/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zpark/entity/Receiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/ReceiverMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zpark/mapper/ReceiverMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ReceiverMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/ReceiverMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/controller/AdminsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/controller/AdminsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Goods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/OrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/OrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Receiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/ReceiverMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/ReceiverMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/ReceiverMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/ReceiverMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload-images/admin-images/admin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload-images/user-admins/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/controller/AdminsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/controller/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Admins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Goods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/OrderDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Receiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/AdminsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/GoodsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/LevelMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/OrderDetailMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/OrdersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/ReceiverMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/mapper/UsersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/service/AdminsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/service/impl/AdminsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/service/impl/TestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/utils/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/utils/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/utils/ResultObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zpark/utils/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/AdminsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/GoodsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LevelMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/OrderDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/OrdersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ReceiverMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/UsersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/META-INF/shopping-manage.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/META-INF/shoppingmanage.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/controller/AddressController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/controller/AdminsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/controller/FileController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Admins.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Goods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Level.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/OrderDetail.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Receiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/entity/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/AddressMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/AdminsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/GoodsMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/LevelMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/OrderDetailMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/OrdersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/ReceiverMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/mapper/UsersMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/service/AdminsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/service/TestService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/service/impl/AdminsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/service/impl/TestServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/utils/FileUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/utils/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/utils/ResultObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/com/zpark/utils/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/generatorConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/AddressMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/AdminsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/GoodsMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/LevelMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/OrderDetailMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/OrdersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/ReceiverMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mapper/UsersMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/classes/springMVC.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/aspectjweaver-1.9.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/commons-dbcp-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/commons-io-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/commons-pool-1.5.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/druid-0.2.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/jackson-core-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/jackson-databind-2.9.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/jsqlparser-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/lombok-1.18.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/mapper-3.3.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/mybatis-3.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/mybatis-spring-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/mysql-connector-java-5.1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/pagehelper-5.1.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/persistence-api-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-aop-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-beans-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-context-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-core-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-expression-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-jdbc-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-tx-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-web-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/lib/spring-webmvc-4.3.8.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/upload-images/admin-images/admin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/shopping-manage/upload-images/user-admins/user.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +208,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="vecher &lt;745418984@qq.com&gt;" />
         <option value="wuchuang066 &lt;39694741+wuchuang066@users.noreply.github.com&gt;" />
       </list>
     </option>
@@ -143,15 +257,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="database.data.extractors.current.id" value="Tab-separated (TSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.1325" />
     <property name="project.structure.side.proportion" value="0.43066517" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -162,6 +277,7 @@
       <recent name="com.zpark.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\java\shoppingmanage\src\main\java\com\zpark\utils" />
       <recent name="D:\IdeaProjects\java\shoppingmanage\src\main\resources" />
       <recent name="D:\IdeaProjects\java\shoppingmanage\src\main\java\com\zpark\mapper" />
     </key>
@@ -1694,6 +1810,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_shoppingmanage" />
+        <option name="HTTP_PORT" value="8080" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -1776,7 +1893,7 @@
     <option name="viewStates">
       <list>
         <serviceView>
-          <option name="contentProportion" value="0.14822404" />
+          <option name="contentProportion" value="0.06215847" />
           <treeState>
             <expand>
               <path>
@@ -1882,6 +1999,35 @@
       <workItem from="1576458671930" duration="20716000" />
       <workItem from="1576629537096" duration="13647000" />
       <workItem from="1576714803857" duration="9619000" />
+      <workItem from="1576757862075" duration="266000" />
+      <workItem from="1576763299996" duration="599000" />
+      <workItem from="1576765407427" duration="738000" />
+      <workItem from="1576898093700" duration="93000" />
+      <workItem from="1576920865828" duration="6184000" />
+      <workItem from="1577014858771" duration="420000" />
+      <workItem from="1577060422718" duration="11113000" />
+      <workItem from="1577099760364" duration="166000" />
+      <workItem from="1577102020688" duration="440000" />
+      <workItem from="1577102492609" duration="53000" />
+      <workItem from="1577102558569" duration="100000" />
+      <workItem from="1577102669900" duration="99000" />
+      <workItem from="1577102785105" duration="217000" />
+      <workItem from="1577103089149" duration="449000" />
+      <workItem from="1577103573876" duration="46000" />
+      <workItem from="1577103633064" duration="216000" />
+      <workItem from="1577104382935" duration="27000" />
+      <workItem from="1577104487502" duration="683000" />
+      <workItem from="1577147139463" duration="16628000" />
+      <workItem from="1577233022657" duration="4646000" />
+      <workItem from="1577265402044" duration="455000" />
+      <workItem from="1577280824815" duration="74000" />
+      <workItem from="1577280998507" duration="32000" />
+      <workItem from="1577319733765" duration="9154000" />
+      <workItem from="1577348600449" duration="392000" />
+      <workItem from="1577527978762" duration="31000" />
+      <workItem from="1577665085778" duration="10660000" />
+      <workItem from="1577710337734" duration="54000" />
+      <workItem from="1577752516499" duration="6431000" />
     </task>
     <task id="LOCAL-00001" summary="user  测试">
       <created>1574748046058</created>
@@ -1918,7 +2064,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576294023394</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="2019 12 14 前端页面购物车之前 付款之前提交 购物车商品信息还没显示完全">
+      <created>1576758043827</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1576758043827</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1931,7 +2084,8 @@
     <MESSAGE value="2019 12 05 查询订单表" />
     <MESSAGE value="2019 12 11 后台功能基本完成 还剩下、&#10;商品模态框 校验&#10;订单模态框关闭&#10;订单echarts 统计模块&#10;left 左侧模态框验证&#10;以后有时间再完成&#10;还有一个bug  订单模态框打开关闭不了" />
     <MESSAGE value="2019 12 14 前台注册登陆提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="2019 12 14 前台注册登陆提交" />
+    <MESSAGE value="2019 12 14 前端页面购物车之前 付款之前提交 购物车商品信息还没显示完全" />
+    <option name="LAST_COMMIT_MESSAGE" value="2019 12 14 前端页面购物车之前 付款之前提交 购物车商品信息还没显示完全" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#HTTP_Proxy" timestamp="1575891948812">
@@ -1942,22 +2096,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1576230180086" />
+    <state x="361" y="71" key="#Notifications" timestamp="1577103587314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1577103587314" />
     <state x="361" y="71" key="#SQL_Dialects" timestamp="1576233415197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#SQL_Dialects/0.0.1536.824@0.0.1536.824" timestamp="1576233415197" />
+    <state x="449" y="20" key="#Tomcat_8.5.43" timestamp="1577102887141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="20" key="#Tomcat_8.5.43/0.0.1536.824@0.0.1536.824" timestamp="1577102887141" />
+    <state x="361" y="70" key="#Tomcat_Server" timestamp="1577102882126">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="70" key="#Tomcat_Server/0.0.1536.824@0.0.1536.824" timestamp="1577102882126" />
     <state x="361" y="71" key="#Vim_Emulation" timestamp="1576230667240">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Vim_Emulation/0.0.1536.824@0.0.1536.824" timestamp="1576230667240" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576547949202">
+    <state x="442" y="259" width="751" height="292" key="#com.intellij.codeInsight.template.impl.EditVariableDialog" timestamp="1577153109228">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1576547949202" />
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1576723418514">
+    <state x="442" y="259" width="751" height="292" key="#com.intellij.codeInsight.template.impl.EditVariableDialog/0.0.1536.824@0.0.1536.824" timestamp="1577153109228" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577180766614">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1576723418514" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1577180766614" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1577346754730">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1577346754730" />
     <state x="360" y="70" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1576547943994">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -1966,122 +2136,130 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="139" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1575353551876" />
-    <state x="359" y="0" key="CommitChangelistDialog2" timestamp="1576294019389">
+    <state x="426" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577345123750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="359" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576294019389" />
-    <state width="449" height="466" key="DebuggerActiveHint" timestamp="1576672150060">
+    <state x="426" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1577345123750" />
+    <state x="70" y="10" width="1404" height="814" key="CommitChangelistDialog2" timestamp="1577859696557">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="449" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1576672150060" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1576672615905">
+    <state x="70" y="10" width="1404" height="814" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577859696557" />
+    <state width="451" height="466" key="DebuggerActiveHint" timestamp="1577693703595">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1576672615905" />
-    <state width="1246" height="272" key="GridCell.Tab.0.bottom" timestamp="1576751899961">
+    <state width="451" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1577693703595" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1577710395985">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.0.center" timestamp="1576751899961">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577710395985" />
+    <state width="1372" height="153" key="GridCell.Tab.0.bottom" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.0.left" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.0.center" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.0.right" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.0.left" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.1.bottom" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.0.right" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.1.center" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.1.bottom" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.1.left" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.1.center" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.1.right" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.1.left" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.2.bottom" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.1.right" timestamp="1577795141246">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.2.center" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1577795141246" />
+    <state width="1372" height="153" key="GridCell.Tab.2.bottom" timestamp="1577795141247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.2.left" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577795141247" />
+    <state width="1372" height="153" key="GridCell.Tab.2.center" timestamp="1577795141247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="272" key="GridCell.Tab.2.right" timestamp="1576751899961">
+    <state width="1372" height="153" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1577795141247" />
+    <state width="1372" height="153" key="GridCell.Tab.2.left" timestamp="1577795141247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="272" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1576751899961" />
-    <state width="1246" height="318" key="GridCell.Tab.3.bottom" timestamp="1576721513792">
+    <state width="1372" height="153" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1577795141247" />
+    <state width="1372" height="153" key="GridCell.Tab.2.right" timestamp="1577795141247">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576721513792" />
-    <state width="1246" height="318" key="GridCell.Tab.3.center" timestamp="1576721513792">
+    <state width="1372" height="153" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1577795141247" />
+    <state width="1372" height="321" key="GridCell.Tab.3.bottom" timestamp="1577699063296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1576721513792" />
-    <state width="1246" height="318" key="GridCell.Tab.3.left" timestamp="1576721513792">
+    <state width="1372" height="321" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577699063296" />
+    <state width="1372" height="321" key="GridCell.Tab.3.center" timestamp="1577699063295">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1576721513792" />
-    <state width="1246" height="318" key="GridCell.Tab.3.right" timestamp="1576721513792">
+    <state width="1372" height="321" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1577699063295" />
+    <state width="1372" height="321" key="GridCell.Tab.3.left" timestamp="1577699063295">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1576721513792" />
-    <state width="1246" height="318" key="GridCell.Tab.4.bottom" timestamp="1576721512068">
+    <state width="1372" height="321" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1577699063295" />
+    <state width="1372" height="321" key="GridCell.Tab.3.right" timestamp="1577699063296">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1576721512068" />
-    <state width="1246" height="318" key="GridCell.Tab.4.center" timestamp="1576721512067">
+    <state width="1372" height="321" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1577699063296" />
+    <state width="1246" height="234" key="GridCell.Tab.4.bottom" timestamp="1577095817208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1576721512067" />
-    <state width="1246" height="318" key="GridCell.Tab.4.left" timestamp="1576721512067">
+    <state width="1246" height="234" key="GridCell.Tab.4.bottom/0.0.1536.824@0.0.1536.824" timestamp="1577095817208" />
+    <state width="1246" height="234" key="GridCell.Tab.4.center" timestamp="1577095817208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1576721512067" />
-    <state width="1246" height="318" key="GridCell.Tab.4.right" timestamp="1576721512068">
+    <state width="1246" height="234" key="GridCell.Tab.4.center/0.0.1536.824@0.0.1536.824" timestamp="1577095817208" />
+    <state width="1246" height="234" key="GridCell.Tab.4.left" timestamp="1577095817208">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1246" height="318" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1576721512068" />
+    <state width="1246" height="234" key="GridCell.Tab.4.left/0.0.1536.824@0.0.1536.824" timestamp="1577095817208" />
+    <state width="1246" height="234" key="GridCell.Tab.4.right" timestamp="1577095817208">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1246" height="234" key="GridCell.Tab.4.right/0.0.1536.824@0.0.1536.824" timestamp="1577095817208" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1576458938071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1576458938071" />
-    <state x="270" y="0" key="SettingsEditor" timestamp="1576459595819">
+    <state x="82" y="48" width="1286" height="715" key="SettingsEditor" timestamp="1577348577087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1576459595819" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1576294026397">
+    <state x="82" y="48" width="1286" height="715" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1577348577087" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1576758047254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576294026397" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1576757902810">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1576758047254" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1577859593917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1576757902810" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1577859593917" />
     <state x="339" y="57" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1575540170181">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="339" y="57" key="com.intellij.javaee.view.ServerArtifactsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575540170181" />
-    <state x="178" y="114" key="new project wizard" timestamp="1575790732063">
+    <state x="178" y="45" key="new project wizard" timestamp="1577102179955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="114" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1575790732063" />
+    <state x="178" y="45" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1577102179955" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1577347199411">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1577347199411" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1576025898067">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

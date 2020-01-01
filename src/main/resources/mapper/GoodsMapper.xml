@@ -44,6 +44,9 @@
             <if test="receiverId!=null and receiverId!= 0">
                 and r.receiver_id = #{receiverId}
             </if>
+            <if test="goodsUpershelf!=null">
+                and g.goods_upershelf = #{goodsUpershelf}
+            </if>
         </trim>
         order by goods_id desc
     </select>

@@ -9,4 +9,6 @@ public interface OrdersMapper {
     List<Orders> selectPages(Orders orders);
 
     List<Orders> selectGroup(Orders orders);
+
+    Integer insertOrder(Orders orders);
 }

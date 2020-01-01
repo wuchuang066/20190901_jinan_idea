@@ -71,4 +71,13 @@
             "%Y-%m")
     </select>
 
+    <insert id="insertOrder" parameterType="com.zpark.entity.Orders" useGeneratedKeys="true"  keyColumn="order_id" keyProperty="orderId">
+    insert into orders ( user_id, consignee_name,
+      consignee_address, order_phone, order_date,
+      order_state, order_note)
+    values ( #{userId,jdbcType=INTEGER}, #{consigneeName,jdbcType=VARCHAR},
+      #{consigneeAddress,jdbcType=VARCHAR}, #{orderPhone,jdbcType=VARCHAR}, #{orderDate,jdbcType=TIMESTAMP},
+      #{orderState,jdbcType=INTEGER}, #{orderNote,jdbcType=VARCHAR})
+  </insert>
+
 </mapper>
